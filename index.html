@@ -39,6 +39,11 @@
         background-position: 0 25%;
       }
 
+      #anedot {
+        width: 375px;
+        --bs-aspect-ratio: 450%;
+      }
+
       /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
       @media (max-width: 1399.98px) {
       }
@@ -59,6 +64,13 @@
         }
       }
 
+      /* ipad@810px, x-small screens */
+      @media (width: 810px) or (max-width: 400px) {
+        #anedot {
+          margin-left: -14px;
+        }
+      }
+
       /* `md` applies to small devices (landscape phones, less than 768px) */
       @media (max-width: 767.98px) {
         #slap {
@@ -71,30 +83,6 @@
       @media (max-width: 575.98px) {
         #slap {
           background-position: -107px center;
-        }
-      }
-
-      #anedot {
-        width: 375px;
-        --bs-aspect-ratio: 450%;
-      }
-
-      @media only screen and (max-width : 900px){
-        #anedot {
-          width: 140%;
-          margin-left: -48px;
-        }
-      }
-      @media only screen and (max-width : 430px){
-        #anedot {
-          width: 134%;
-          --bs-aspect-ratio: 434%;
-        }
-      }
-      @media only screen and (max-width : 375px){
-        #anedot {
-          width: 138%;
-          --bs-aspect-ratio: 445%;
         }
       }
     </style>
@@ -215,23 +203,26 @@
           </div>
 
           <div class="col-md-6">
-            <div class="h-100 p-5 bg-light border rounded-3">
-              <h2>Donate to our campaign</h2>
-              <h5>Donate by mail</h5>
-              <p>Print the <a href="resources/ScarbroughRemitForm.pdf">Remit Form</a> and mail it to <br>
-              <address class="vcard ms-2">
-                <span class="fn">Scarbrough for Judge</span><br>
-                <span class="adr">
-                  <span class="street-address">13681 Newport Ave Suite 8139</span><br>
-                  <span class="locality">Tustin</span>,
-                  <abbr class="region" title="California">CA</abbr>&nbsp;&nbsp;
-                  <span class="postal-code">92780</span>
-                </span>
-              </address>
-              </p>
+            <div class="h-100 p-1 p-sm-2 p-md-3 p-lg-5 bg-light border rounded-3">
+              <div class="p-2 p-md-0">
+                <h2>Donate to our campaign</h2>
+                <h5>Donate by mail</h5>
+                <p>Print the <a href="resources/ScarbroughRemitForm.pdf">Remit Form</a> and mail it to <br>
+                <address class="vcard ms-2">
+                  <span class="fn">Scarbrough for Judge</span><br>
+                  <span class="adr">
+                    <span class="street-address">13681 Newport Ave Suite 8139</span><br>
+                    <span class="locality">Tustin</span>,
+                    <abbr class="region" title="California">CA</abbr>&nbsp;&nbsp;
+                    <span class="postal-code">92780</span>
+                  </span>
+                </address>
+                </p>
 
-              <h5>Donate online</h5>
-              <p>Use the form below or visit our page at <a href="https://secure.anedot.com/scarbrough2022/donate">Anedot</a></p>
+                <h5>Donate online</h5>
+                <p>Use the form below or visit our page at <a href="https://secure.anedot.com/scarbrough2022/donate">Anedot</a></p>
+              </div>
+
               <div class="ratio" id="anedot">
                 <iframe src="https://secure.anedot.com/scarbrough2022/donate" height="1620" width="536" allowpaymentrequest="true" frameborder="0"></iframe>
               </div>
