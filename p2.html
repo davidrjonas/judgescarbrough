@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link rel="preload stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Roboto:300,700,300italic,700italic|Varela+Round:regular&amp;subset=latin,latin-ext">
+
+    <link rel="apple-touch-icon" href="/img/logo-180x180.png" sizes="180x180">
+    <meta name="theme-color" content="#194b7f">
+
+    <title>Eric Scarbrough for Judge</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.cdnfonts.com https://secure.anedot.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.cdnfonts.com https://fonts.googleapis.com https://fonts.gstatic.com;">
+
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/brandon-grotesque-regular');
+      body {
+        font-family: roboto, helvetica, san-serif;
+      }
+      address {
+        font-family: 'Brandon Grotesque Bold', sans-serif !important;
+        font-size: larger;
+      }
+      .bg-dark {
+        background-color: #264B7C !important;
+      }
+
+      .content div {
+          padding-top: 80px;
+          padding-bottom: 80px;
+          box-sizing: border-box;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 800px;
+          z-index: 100;
+
+          h2,
+          p {
+            font-family: 'Roboto', sans-serif;
+          }
+
+          h2 {
+            font-size: 30px;
+            padding-bottom: 40px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 24px;
+          }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        /* Text styles */
+        font-family: 'Lato',sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #212121;
+        perspective: 4px; /* The depth */
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      header {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        xtransform-style: preserve-3d;
+      }
+
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        display: block;
+        background: url(img/new/untitled-7084@1500.jpg);
+        background-size: cover;
+        z-index: 0;
+        transform: translateZ(-4px) scale(1);
+        max-height: 1000px;
+      }
+
+      header div {
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        transform: translateZ(-2px) scale(1);
+        right: 8em;
+        width: 40em;
+        text-align: right;
+      }
+
+      header h1 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: white;
+        text-shadow: 0px 0px 22px #24304a;
+      }
+
+      header h2 {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: white;
+        text-shadow: 0px 0px 10px #24304a;
+      }
+
+      nav {
+        height: 120px;
+      }
+      nav img {
+        position: absolute; top: 0; left:0;
+      }
+
+      #x {
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 999;
+        background-color: #264B7C;
+      }
+
+      #x h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height:19px;
+        background-color: #d42a2a;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 3px 24px;
+        letter-spacing: 0.1em;
+      }
+
+      #x h1 span.first {
+        position: absolute;
+        top: 26px;
+        left: 25px;
+        color: white;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 28px;
+        text-transform: uppercase;
+      }
+
+      #x h1 span.last {
+        position: absolute;
+        top: 49px;
+        left: 23px;
+        color: white;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 46px;
+        text-transform: uppercase;
+      }
+
+      #x .vl {
+        position: absolute;
+        left: 373px;
+        top: 24px;
+        height: 72px;
+        xwidth: 1px;
+        border-left: 2px solid white;
+        z-index: 9999;
+      }
+
+      #x h3 {
+        position: absolute;
+        left: 451px;
+        top: 38px;
+        font-size: 18px;
+        color: white;
+        width: 292px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+        opacity: 0.6;
+      }
+
+      #x img {
+        position: absolute;
+        top: 32px;
+        left: 393px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="x">
+      <h1>
+        <span class="first">Eric</span>
+        <span class="last">Scarbrough</span>
+      </h1>
+      <h2>Senior Deputy District Attorney</h2>
+      <div class="vl"></div>
+      <img src="img/new/booknhammer.png">
+      <h3>Committed to protecting Orange County</h3>
+    </div>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div id="n" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto me-4">
+              <li class="nav-item"><a href="" class="nav-link active">Home</a></li>
+              <li class="nav-item"><a href="" class="nav-link">About Eric</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Endorsements</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Media</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Events</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+              <li class="nav-item"><button type="button" href="" class="nav-link btn btn-outline-light">Donate</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div>
+          <h1>Eric Scarbrough for Superior Court Judge</h1>
+          <h2>Orange County, CA, Office #28</h2>
+        </div>
+      </header>
+
+      <section class="content">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum venenatis molestie. Suspendisse potenti. Sed at nunc iaculis, mattis justo et, congue massa. Nullam aliquam molestie pharetra. Ut id viverra magna. Donec facilisis ante diam, eget volutpat justo pharetra vitae. Cras ut commodo tortor. Proin eget nisi viverra felis viverra venenatis et ac mauris. Ut ac velit hendrerit, feugiat diam mattis, iaculis tellus. Donec sit amet felis rhoncus, egestas ligula non, tincidunt tortor. Sed congue, lorem tincidunt semper malesuada, ipsum ante euismod enim, vel condimentum nibh nibh non est. Duis pretium at quam euismod porta. Pellentesque vel luctus erat.</p>
+
+          <p>Proin a mi et orci viverra bibendum non sed nunc. Sed sit amet augue at urna porttitor scelerisque. Nunc ut lacinia sapien. Curabitur vestibulum tincidunt ex, ac dapibus nulla. Donec vel velit cursus, dapibus ipsum et, tempus magna. In porta ex sed molestie maximus. Mauris in enim porttitor, finibus lorem sed, fermentum purus. Integer iaculis, enim id ornare cursus, mauris turpis tempor metus, sed vestibulum sem ligula nec purus. In eget enim a tellus maximus condimentum a eget lectus. Donec nec odio venenatis, fringilla lorem a, interdum eros. Curabitur lacinia eu diam et porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+          <p>Etiam suscipit, lectus sed lobortis vulputate, nisl elit pharetra elit, quis vestibulum arcu metus quis erat. Nulla facilisi. Nunc quis quam et magna vestibulum facilisis ac ac odio. Proin a scelerisque mauris, vel iaculis risus. Aliquam erat augue, accumsan sit amet risus porttitor, faucibus aliquet massa. Aliquam ac ipsum facilisis, lacinia sapien id, luctus purus. Vivamus tempus ex augue. Cras ornare augue tortor, vel auctor dolor rutrum ac. Suspendisse congue tortor metus, sit amet maximus eros dignissim ultricies. Morbi vestibulum suscipit ante, quis tincidunt turpis aliquet et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <p>Etiam suscipit nulla nec semper varius. Aliquam vestibulum dolor non metus ornare pharetra. Fusce at condimentum ex. Quisque tincidunt, ligula quis pharetra blandit, mauris erat porta tortor, vitae hendrerit diam diam et mauris. Sed fringilla hendrerit purus. Phasellus sit amet lobortis nunc, sit amet dapibus lorem. Nullam magna neque, consectetur a nisl ac, imperdiet molestie libero. Donec elementum tortor vel sapien fermentum, vel fringilla ligula consectetur.</p>
+
+          <p>Nullam nec libero imperdiet, egestas diam nec, tincidunt dolor. Etiam eu ornare lorem, nec malesuada arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam magna nibh, sagittis non sodales quis, iaculis ac sapien. Etiam est libero, tempor eu ligula ut, ultrices aliquam nulla. Nullam nec scelerisque mauris. Phasellus vitae lacinia risus, a suscipit lacus. Nunc ornare enim ut nisl blandit, et maximus urna dictum. In et convallis enim. Cras tristique justo justo, a ornare enim ultrices at. In eu vehicula arcu, id faucibus lacus. Curabitur pharetra vitae eros vel tempus. Donec auctor dui ut hendrerit tempor. Vivamus bibendum erat nulla, non dignissim nulla hendrerit eu. Suspendisse dui massa, venenatis ac commodo at, consectetur eget urna. Aenean volutpat massa nec nisl ullamcorper mattis. </p>
+        </div>
+      </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
